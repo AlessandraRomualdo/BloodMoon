@@ -4,21 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2c48423-bf9b-4187-bce7-cc3ca28053e6" name="Changes" comment="Fix: Menu bg and font style, adding controls infos">
-      <change afterPath="$PROJECT_DIR$/asset/Level3.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Level3Bg0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Level3Bg1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Level3Bg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Level3Bg3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Level3Bg4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Level3Bg5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Level3Bg6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Level3Bg7.png" afterDir="false" />
+    <list default="true" id="e2c48423-bf9b-4187-bce7-cc3ca28053e6" name="Changes" comment="Adding new level">
+      <change afterPath="$PROJECT_DIR$/asset/Enemy4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy4Shot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy4_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy4_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy4_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy4_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy4_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy4_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy4_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy4_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy4_8.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Const.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Const.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/EntityFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/EntityFactory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/EntityMediator.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/EntityMediator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Level.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Level.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741037187965</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adding new level">
+      <option name="closed" value="true" />
+      <created>1741038922789</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1741038922789</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -190,6 +200,7 @@
     <MESSAGE value="Creating movement player" />
     <MESSAGE value="Creating movement enemy 1" />
     <MESSAGE value="Fix: Menu bg and font style, adding controls infos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: Menu bg and font style, adding controls infos" />
+    <MESSAGE value="Adding new level" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding new level" />
   </component>
 </project>

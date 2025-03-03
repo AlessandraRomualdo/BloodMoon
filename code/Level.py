@@ -58,7 +58,7 @@ class Level:
                     sys.exit()
                     # adicionando os inimigos na tela
                 if event.type == EVENT_ENEMY:
-                    choice = random.choice(('Enemy1', 'Enemy2', 'Enemy3'))
+                    choice = random.choice(('Enemy1', 'Enemy2', 'Enemy3', 'Enemy4'))
                     self.entity_list.append(EntityFactory.get_entity(choice))
                     # condição para passar de fase timeout
                 if event.type == EVENT_TIMEOUT:

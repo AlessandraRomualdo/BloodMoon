@@ -41,6 +41,8 @@ ENTITY_SPEED={
 'Enemy2Shot': 2,
 'Enemy3': 1,
 'Enemy3Shot': 2,
+'Enemy4': 1,
+'Enemy4Shot': 2,
 }
 
 ENTITY_SCORE={
@@ -75,6 +77,8 @@ ENTITY_SCORE={
 'Enemy2Shot': 0,
 'Enemy3': 125,
 'Enemy3Shot': 0,
+'Enemy4': 125,
+'Enemy4Shot': 0,
 }
 
 EVENT_ENEMY=pygame.USEREVENT + 1
@@ -112,13 +116,16 @@ ENTITY_HEALTH={
 'Enemy2Shot': 1,
 'Enemy3': 70,
 'Enemy3Shot': 1,
+'Enemy4': 70,
+'Enemy4Shot': 1,
 }
 
 ENTITY_SHOT_DELAY={
 'Player1': 20,
 'Enemy1': 100,
 'Enemy2': 200,
-'Enemy3': 200
+'Enemy3': 200,
+'Enemy4': 190,
 }
 
 ENTITY_DAMAGE={
@@ -153,6 +160,8 @@ ENTITY_DAMAGE={
 'Enemy2Shot': 15,
 'Enemy3': 1,
 'Enemy3Shot': 15,
+'Enemy4': 1,
+'Enemy4Shot': 15,
 }
 
 #M
@@ -171,7 +180,7 @@ PLAYER_KEY_ALT_SHOOT = {'Player1': pygame.K_RSHIFT}
 
 #S
 
-SPAW_TIME=3000
+SPAW_TIME=2800
 SCORE_POS={
 'Title': (WIN_WIDTH / 2, 50),
 'EnterName': (WIN_WIDTH / 2, 80),
