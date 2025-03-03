@@ -4,32 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2c48423-bf9b-4187-bce7-cc3ca28053e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/BloodMoon.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Battleground1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Battleground2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Battleground3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Enemy_Shot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/MenuBg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Player_Run0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Player_Run1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Player_Run2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Player_Run3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Player_Run4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Player_Run5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Player_Shot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/TheNorth.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Const.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Menu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/font/UnifrakturMaguntia-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="e2c48423-bf9b-4187-bce7-cc3ca28053e6" name="Changes" comment="Initial commint&#10;Creating menu">
+      <change afterPath="$PROJECT_DIR$/asset/Level1.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Level1Bg0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Level1Bg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Level1Bg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Level1Bg3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Level1Bg4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Level1Bg5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Level2.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Background.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Entity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/EntityFactory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Level.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/Battleground1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/Battleground2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/Battleground3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Const.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Const.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Game.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +39,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AlessandraRomualdo"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AlessandraRomualdo/BloodMoon.git",
+    "accountId": "e59536b5-b3d6-4eb7-a8e1-07a6cebb8e60"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 0
 }]]></component>
@@ -63,13 +68,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/alessandra/PycharmProjects/BloodMoon/font"
+    "last_opened_file_path": "/home/alessandra/PycharmProjects/BloodMoon/asset"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/font" />
       <recent name="$PROJECT_DIR$/asset" />
+      <recent name="$PROJECT_DIR$/font" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -118,6 +123,19 @@
       <option name="presentableId" value="Default" />
       <updated>1741004030242</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commint&#10;Creating menu">
+      <option name="closed" value="true" />
+      <created>1741009888188</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741009888188</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commint&#10;Creating menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commint&#10;Creating menu" />
   </component>
 </project>
