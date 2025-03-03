@@ -5,11 +5,12 @@ import pygame.display
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from code.Const import WIN_HEIGHT, MENU_OPTION, EVENT_ENEMY, SPAW_TIME, EVENT_TIMEOUT, \
+from code.Const import  WIN_HEIGHT, MENU_OPTION, EVENT_ENEMY, SPAW_TIME, EVENT_TIMEOUT, \
     TIMEOUT_STEP, TIMEOUT_LEVEL, C_RED_DARK, C_RED_DARKEST
+from code.Enemy import Enemy
 from code.Entity import Entity
 from code.EntityFactory import EntityFactory
-
+from code.EntityMediator import EntityMediator
 from code.Player import Player
 
 
@@ -40,15 +41,23 @@ class Level:
             for ent in self.entity_list:
                 self.window.blit(source=ent.surf, dest=ent.rect)
                 ent.move()
+                if isinstance(ent, (Player, Enemy)):
+                    shoot = ent.shoot()
 
+                    if shoot is not None:
+                        self.entity_list.append(shoot)
                  # mostrar na tela o health e score dos players
                 if ent.name == 'Player1':
-                    self.level_text(14, f'Player1 - Health: {ent.health} - SCORE: {ent.score}', C_RED_DARK, (10, 25))
+                    self.level_text(14, f'Player1 - Health: {ent.health} - SCORE: {ent.score}', C_RED_DARKEST, (10, 25))
+
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
                     # adicionando os inimigos na tela
+                if event.type == EVENT_ENEMY:
+                    choice = random.choice(('Enemy1', 'Enemy2', 'Enemy3'))
+                    self.entity_list.append(EntityFactory.get_entity(choice))
                     # condição para passar de fase timeout
                 if event.type == EVENT_TIMEOUT:
                     self.timeout -= TIMEOUT_STEP
@@ -67,12 +76,14 @@ class Level:
                 if not found_player:
                     return False
 
-
             # print texto
-            self.level_text(14, f'{self.name} - Timeout: {self.timeout / 1000 :.1f}s', C_RED_DARK, (10, 5))
-            self.level_text(14, f'fps: {clock.get_fps():.0f}', C_RED_DARKEST, (10, WIN_HEIGHT - 35))
-
+            self.level_text(24, f'{self.name} - Timeout: {self.timeout / 1000 :.1f}s', C_RED_DARK, (10, 5))
+            self.level_text(24, f'fps: {clock.get_fps():.0f}', C_RED_DARK, (10, WIN_HEIGHT - 35))
             pygame.display.flip()
+            # invocar o mediador
+            EntityMediator.verify_collision(entity_list=self.entity_list)
+            # verifica a vida e destroi a entidade
+            EntityMediator.verify_health(entity_list=self.entity_list)
 
 
     def level_text(self, text_size: int, text: str, text_color: tuple, text_pos: tuple):
