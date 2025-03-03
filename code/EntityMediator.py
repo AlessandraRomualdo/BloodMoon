@@ -64,11 +64,9 @@ class EntityMediator:
 
 
     @staticmethod
-    def verify_health(entity_list):
+    def verify_health(entity_list: list[Entity]):
         for ent in entity_list:
-            if ent is None:
-                continue  # Ignora valores None
-
             if ent.health <= 0:
-                print(f'{ent.name} foi removido!')  # Debug
+                if isinstance(ent, Enemy):
+                    EntityMediator.__give__score(ent, entity_list)
                 entity_list.remove(ent)
