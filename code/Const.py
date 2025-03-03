@@ -124,7 +124,7 @@ ENTITY_DAMAGE={
 }
 
 #M
-MENU_OPTION=('NEW GAME 1P',
+MENU_OPTION=('NEW GAME',
              'SCORE',
              'EXIT'
              )

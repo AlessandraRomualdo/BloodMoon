@@ -55,14 +55,14 @@ class Score:
         pygame.mixer_music.play(-1)
         self.window.blit(source=self.surf, dest=self.rect)
         self.score_text(48, 'TOP 5', C_RED_DARKEST, SCORE_POS['Title'])
-        self.score_text(20, 'NAME       SCORE       ', C_RED_DARKEST, SCORE_POS['Label'])
+        self.score_text(20, '       NAME       SCORE       ', C_RED_DARKEST, SCORE_POS['Label'])
         db_proxy = DBProxy('DBScore')
         list_score = db_proxy.retrieve_top5()
         db_proxy.close()
 
         for player_score in list_score:
             id_, name, score = player_score
-            self.score_text(20, f'{name}   ', C_RED_DARKEST,
+            self.score_text(20, f'{name}        -    {score}', C_RED_DARKEST,
                             SCORE_POS[list_score.index(player_score)])
         while True:
             for event in pygame.event.get():

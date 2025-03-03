@@ -2,7 +2,7 @@ import pygame.image
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from code.Const import WIN_WIDTH,  MENU_OPTION, C_RED_DARK, C_RED_DARKEST
+from code.Const import WIN_WIDTH, MENU_OPTION, C_RED_DARK, C_RED_DARKEST
 
 
 class Menu:
@@ -15,17 +15,23 @@ class Menu:
         menu_option = 0
         pygame.mixer_music.load('./asset/Menu.mp3')
         pygame.mixer_music.play(-1)
+
         while True:
             # desenha as imagens e texto do menu
             self.window.blit(source=self.surf, dest=self.rect)
             self.menu_text(120, "BLOOD", C_RED_DARK, ((WIN_WIDTH / 2), 70))
             self.menu_text(120, "MOON", C_RED_DARK, ((WIN_WIDTH / 2), 150))
+            # Exibir os controles
+            self.menu_text(30, "CONTROLS", C_RED_DARKEST, ((WIN_WIDTH / 2), 200))
+            self.menu_text(30, "[Ctrl] right - Shot", C_RED_DARKEST, ((WIN_WIDTH / 2), 230))
+            self.menu_text(30, "[Shift] right - Shot Up", C_RED_DARKEST, ((WIN_WIDTH / 2), 250))
+            self.menu_text(30, "[Arrows] - Move", C_RED_DARKEST, ((WIN_WIDTH / 2), 270))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
-                    self.menu_text(60, MENU_OPTION[i], C_RED_DARK, ((WIN_WIDTH / 2), 250 + 55 * i))
+                    self.menu_text(40, MENU_OPTION[i], C_RED_DARK, ((WIN_WIDTH / 2), 350 + 25 * i))
                 else:
-                    self.menu_text(60, MENU_OPTION[i], C_RED_DARKEST, ((WIN_WIDTH / 2), 250 + 55 * i))
+                    self.menu_text(40, MENU_OPTION[i], C_RED_DARKEST, ((WIN_WIDTH / 2), 350 + 25 * i))
             pygame.display.flip()
 
             # check for all events
@@ -51,7 +57,8 @@ class Menu:
 
     # metodo para escrever e criar a imagem
     def menu_text(self, text_size: int, text: str, text_color: tuple, text_center_pos: tuple):
-        text_font: Font = pygame.font.SysFont(name="Lucida Sans Typewriter", size=text_size)
+        text_font: Font = pygame.font.SysFont("Comic Sans MS", text_size, bold=True)
         text_surf: Surface = text_font.render(text, True, text_color).convert_alpha()
         text_rect: Rect = text_surf.get_rect(center=text_center_pos)
         self.window.blit(source=text_surf, dest=text_rect)
+
