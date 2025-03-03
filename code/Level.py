@@ -41,7 +41,7 @@ class Level:
             for ent in self.entity_list:
                 self.window.blit(source=ent.surf, dest=ent.rect)
                 ent.move()
-                if  isinstance(ent, Player):
+                if  isinstance(ent, (Player, Enemy)):
                     ent.update()
                 if isinstance(ent, (Player, Enemy)):
                     shoot = ent.shoot()

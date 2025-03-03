@@ -62,10 +62,13 @@ class EntityMediator:
                 entity2 = entity_list[j]
                 EntityMediator.__verify_collision_entity(entity1, entity2)
 
+
     @staticmethod
-    def verify_health(entity_list: list[Entity]):
+    def verify_health(entity_list):
         for ent in entity_list:
+            if ent is None:
+                continue  # Ignora valores None
+
             if ent.health <= 0:
-                if isinstance(ent, Enemy):
-                    EntityMediator.__give__score(ent, entity_list)
+                print(f'{ent.name} foi removido!')  # Debug
                 entity_list.remove(ent)

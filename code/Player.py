@@ -15,7 +15,7 @@ class Player(Entity):
         super().__init__(name, position)
         self.shot_delay = ENTITY_SHOT_DELAY[self.name]
 
-        # 🎥 Lista de imagens do personagem para animação
+        # Lista de imagens do personagem para animação
         self.frames = [
             pygame.image.load(f'./asset/{name}_0.png').convert_alpha(),
             pygame.image.load(f'./asset/{name}_1.png').convert_alpha(),
