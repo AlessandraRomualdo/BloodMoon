@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2c48423-bf9b-4187-bce7-cc3ca28053e6" name="Changes" comment="Creating bg Level 1" />
+    <list default="true" id="e2c48423-bf9b-4187-bce7-cc3ca28053e6" name="Changes" comment="Creating movement player">
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Enemy1_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/Enemy1.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Enemy1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/Enemy2.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Enemy2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Enemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Enemy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/EntityMediator.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/EntityMediator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Level.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Level.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Player.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,13 +158,22 @@
       <option name="project" value="LOCAL" />
       <updated>1741019293600</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Creating movement player">
+      <option name="closed" value="true" />
+      <created>1741028896006</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741028896006</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commint&#10;Creating menu" />
     <MESSAGE value="Creating bg Level 1" />
     <MESSAGE value="Creating emeny 3 and shot up player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating emeny 3 and shot up player" />
+    <MESSAGE value="Creating movement player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating movement player" />
   </component>
 </project>
