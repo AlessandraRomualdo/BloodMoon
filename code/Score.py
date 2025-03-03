@@ -28,7 +28,7 @@ class Score:
             text = ''
             if game_mode == MENU_OPTION[0]:
                 score = player_score[0]
-                text = 'Player 1 enter your name (4 characters):'
+                text = 'Player enter your name (4 characters):'
 
             self.score_text(20, text, C_RED_DARKEST, SCORE_POS['EnterName'])
 
@@ -38,7 +38,7 @@ class Score:
                     sys.exit()
                 elif event.type == KEYDOWN:
                     if event.key == K_RETURN and len(name) == 4:
-                        db_proxy.save({'name': name, 'score': score, 'date': get_formatted_date() })
+                        db_proxy.save({'name': name, 'score': score })
                         self.show_score()
                         return
                     elif event.key == K_BACKSPACE:
@@ -54,15 +54,15 @@ class Score:
         pygame.mixer_music.load('./asset/Score.mp3')
         pygame.mixer_music.play(-1)
         self.window.blit(source=self.surf, dest=self.rect)
-        self.score_text(48, 'TOP 10 SCORE', C_RED_DARKEST, SCORE_POS['Title'])
+        self.score_text(48, 'TOP 5', C_RED_DARKEST, SCORE_POS['Title'])
         self.score_text(20, 'NAME       SCORE       ', C_RED_DARKEST, SCORE_POS['Label'])
         db_proxy = DBProxy('DBScore')
-        list_score = db_proxy.retrieve_top10()
+        list_score = db_proxy.retrieve_top5()
         db_proxy.close()
 
         for player_score in list_score:
-            id_, name, score, date = player_score
-            self.score_text(20, f'{name}   -   {score}    ', C_RED_DARKEST,
+            id_, name, score = player_score
+            self.score_text(20, f'{name}   ', C_RED_DARKEST,
                             SCORE_POS[list_score.index(player_score)])
         while True:
             for event in pygame.event.get():
@@ -81,10 +81,3 @@ class Score:
         text_rect: Rect = text_surf.get_rect(center=text_center_pos)
         self.window.blit(source=text_surf, dest=text_rect)
 
-
-
-def get_formatted_date():
-    current_datetime = datetime.now()
-    current_time = current_datetime.strftime("%H:%M")
-    current_date = current_datetime.strftime("%d/%m/%y")
-    return  f"{current_time} - {current_date}"

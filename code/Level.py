@@ -41,6 +41,8 @@ class Level:
             for ent in self.entity_list:
                 self.window.blit(source=ent.surf, dest=ent.rect)
                 ent.move()
+                if  isinstance(ent, Player):
+                    ent.update()
                 if isinstance(ent, (Player, Enemy)):
                     shoot = ent.shoot()
 
@@ -48,7 +50,7 @@ class Level:
                         self.entity_list.append(shoot)
                  # mostrar na tela o health e score dos players
                 if ent.name == 'Player1':
-                    self.level_text(14, f'Player1 - Health: {ent.health} - SCORE: {ent.score}', C_RED_DARKEST, (10, 25))
+                    self.level_text(14, f'Health: {ent.health} - SCORE: {ent.score}', C_RED_DARKEST, (10, 10))
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -77,8 +79,8 @@ class Level:
                     return False
 
             # print texto
-            self.level_text(24, f'{self.name} - Timeout: {self.timeout / 1000 :.1f}s', C_RED_DARK, (10, 5))
-            self.level_text(24, f'fps: {clock.get_fps():.0f}', C_RED_DARK, (10, WIN_HEIGHT - 35))
+            self.level_text(24, f'{self.name} - Time: {self.timeout / 1000 :.1f}s', C_RED_DARK, (10, WIN_HEIGHT - 45))
+            self.level_text(24, f'fps: {clock.get_fps():.0f}', C_RED_DARK, (10, WIN_HEIGHT - 25))
             pygame.display.flip()
             # invocar o mediador
             EntityMediator.verify_collision(entity_list=self.entity_list)

@@ -18,14 +18,14 @@ class Menu:
         while True:
             # desenha as imagens e texto do menu
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(150, "BLOOD", C_RED_DARK, ((WIN_WIDTH / 2), 70))
-            self.menu_text(150, "MOON", C_RED_DARK, ((WIN_WIDTH / 2), 150))
+            self.menu_text(120, "BLOOD", C_RED_DARK, ((WIN_WIDTH / 2), 70))
+            self.menu_text(120, "MOON", C_RED_DARK, ((WIN_WIDTH / 2), 150))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
-                    self.menu_text(80, MENU_OPTION[i], C_RED_DARK, ((WIN_WIDTH / 2), 250 + 55 * i))
+                    self.menu_text(60, MENU_OPTION[i], C_RED_DARK, ((WIN_WIDTH / 2), 250 + 55 * i))
                 else:
-                    self.menu_text(80, MENU_OPTION[i], C_RED_DARKEST, ((WIN_WIDTH / 2), 250 + 55 * i))
+                    self.menu_text(60, MENU_OPTION[i], C_RED_DARKEST, ((WIN_WIDTH / 2), 250 + 55 * i))
             pygame.display.flip()
 
             # check for all events

@@ -8,23 +8,22 @@ WIN_HEIGHT=506
 C_RED_DARK=(186, 0, 0)
 C_RED_DARKEST=(107, 0, 0)
 
-
 # E
 ENTITY_SPEED={
 'Level1Bg0': 0,
 'Level1Bg1': 1,
 'Level1Bg2': 2,
 'Level1Bg3': 3,
-'Level1Bg4': 4,
-'Level1Bg5': 5,
-'Level1Bg6': 6,
+'Level1Bg4': 3,
+'Level1Bg5': 3,
+'Level1Bg6': 3,
 'Level2Bg0': 0,
 'Level2Bg1': 1,
 'Level2Bg2': 2,
 'Level2Bg3': 3,
-'Level2Bg4': 4,
-'Level2Bg5': 4,
-'Level2Bg6': 4,
+'Level2Bg4': 3,
+'Level2Bg5': 3,
+'Level2Bg6': 3,
 'Player1': 3,
 'Player1Shot': 1,
 'Player1ShotUp': 1,
@@ -80,7 +79,7 @@ ENTITY_HEALTH={
 'Level2Bg4': 999,
 'Level2Bg5': 4,
 'Level2Bg6': 4,
-'Player1': 300,
+'Player1': 200,
 'Player1Shot': 1,
 'Player1ShotUp': 1,
 'Enemy1': 50,
@@ -136,7 +135,6 @@ PLAYER_KEY_DOWN={'Player1': pygame.K_DOWN}
 PLAYER_KEY_LEFT={'Player1': pygame.K_LEFT}
 PLAYER_KEY_RIGHT={'Player1': pygame.K_RIGHT}
 PLAYER_KEY_SHOOT={'Player1': pygame.K_RCTRL}
-
 PLAYER_KEY_ALT_SHOOT = {'Player1': pygame.K_RSHIFT}
 
 #S
@@ -145,18 +143,13 @@ SPAW_TIME=3000
 SCORE_POS={
 'Title': (WIN_WIDTH / 2, 50),
 'EnterName': (WIN_WIDTH / 2, 80),
-'Label': (WIN_WIDTH / 2, 90),
-'Name': (WIN_WIDTH / 2, 110),
-0: (WIN_WIDTH / 2, 110),
-1: (WIN_WIDTH / 2, 130),
-2: (WIN_WIDTH / 2, 150),
+'Label': (WIN_WIDTH / 2, 120),
+'Name': (WIN_WIDTH / 2, 130),
+0: (WIN_WIDTH / 2, 140),
+1: (WIN_WIDTH / 2, 150),
+2: (WIN_WIDTH / 2, 160),
 3: (WIN_WIDTH / 2, 170),
-4: (WIN_WIDTH / 2, 190),
-5: (WIN_WIDTH / 2, 210),
-6: (WIN_WIDTH / 2, 230),
-7: (WIN_WIDTH / 2, 250),
-8: (WIN_WIDTH / 2, 270),
-9: (WIN_WIDTH / 2, 290)
+4: (WIN_WIDTH / 2, 180),
 }
 
 #T
