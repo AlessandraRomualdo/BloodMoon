@@ -4,25 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2c48423-bf9b-4187-bce7-cc3ca28053e6" name="Changes" comment="Initial commint&#10;Creating menu">
-      <change afterPath="$PROJECT_DIR$/asset/Level1.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Level1Bg0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Level1Bg1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Level1Bg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Level1Bg3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Level1Bg4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Level1Bg5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Level2.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Background.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Entity.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/EntityFactory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Level.py" afterDir="false" />
+    <list default="true" id="e2c48423-bf9b-4187-bce7-cc3ca28053e6" name="Changes" comment="Creating bg Level 1">
+      <change afterPath="$PROJECT_DIR$/code/Player.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/PlayerShot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Battleground1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Battleground2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Battleground3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/Enemy_Shot.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Enemy1_Shot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/Player_Run0.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Player1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Const.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Const.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/EntityFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/EntityFactory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Level.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Level.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,11 +121,20 @@
       <option name="project" value="LOCAL" />
       <updated>1741009888188</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Creating bg Level 1">
+      <option name="closed" value="true" />
+      <created>1741014105577</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741014105577</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commint&#10;Creating menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commint&#10;Creating menu" />
+    <MESSAGE value="Creating bg Level 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating bg Level 1" />
   </component>
 </project>
